@@ -1,11 +1,11 @@
-import React from 'react'
+import Header from "containers/Header/Header";
 
 const Home = () => {
-    return (
-        <div>
-            Homepage
-        </div>
-    )
-}
+  return (
+    <>
+      <Header title="Popular Titles" />
+    </>
+  );
+};
 
-export default Home
+export default Home;
