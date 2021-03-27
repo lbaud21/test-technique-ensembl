@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import { ContentSection } from "./styles";
 
 const Content = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return <ContentSection></ContentSection>;
+};
 
-export default Content
+export default Content;
