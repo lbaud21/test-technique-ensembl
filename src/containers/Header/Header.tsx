@@ -1,11 +1,21 @@
-import React from 'react'
+//style
+import { HeaderWrapper } from "./styles";
 
+//components
+import NavBar from "components/Header/Navbar";
+import TitleBar from "components/Header/TitleBar";
 
-const Header = () => {
-    return (
-<></>
-    )
+interface HeaderProps {
+  title: string;
 }
 
-export default Header
+const Header: React.FC<HeaderProps> = ({ title }) => {
+  return (
+    <HeaderWrapper>
+      <NavBar />
+      <TitleBar title={title} />
+    </HeaderWrapper>
+  );
+};
 
+export default Header;
