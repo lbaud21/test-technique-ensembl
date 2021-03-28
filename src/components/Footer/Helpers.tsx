@@ -14,10 +14,10 @@ const Footer = () => {
   return (
     <HelpersWrapper>
       {helpersList.map((helper) => (
-        <>
+        <React.Fragment key={helper}>
           <HelperItem>{helper}</HelperItem>
           <HelperSeparator>|</HelperSeparator>
-        </>
+        </React.Fragment>
       ))}
     </HelpersWrapper>
   );
