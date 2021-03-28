@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { FooterSection } from "./styles";
+import FooterComponent from "components/Footer/Footer";
 
 const Footer = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <FooterSection>
+      <FooterComponent />
+    </FooterSection>
+  );
+};
 
-export default Footer
+export default Footer;
