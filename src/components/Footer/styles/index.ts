@@ -45,11 +45,12 @@ outline: none;
 background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
 `
 
 export const SocialNetworkIcon = styled(Icon)`
-width: 1em;
+width: 2em;
+height: 2em;
 `
 
 export const StoreIconsWrapper = styled(IconsGroup)`
@@ -57,5 +58,6 @@ export const StoreIconsWrapper = styled(IconsGroup)`
 `
 
 export const StoreIcon = styled(Icon)`
-width: 3em;
+width: 6em;
+height: 2em;
 `
