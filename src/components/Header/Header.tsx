@@ -2,14 +2,10 @@
 import { HeaderWrapper } from "./styles";
 
 //components
-import NavBar from "components/Header/Navbar";
-import TitleBar from "components/Header/TitleBar";
+import NavBar from "./Navbar";
+import TitleBar from "./TitleBar";
 
-interface HeaderProps {
-  title: string;
-}
-
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header = ({ title }: { title: string }) => {
   return (
     <HeaderWrapper>
       <NavBar />

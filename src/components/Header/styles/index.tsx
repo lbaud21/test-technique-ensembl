@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const HeaderWrapper = styled.header`
+  height: 20vh;
+`;
+
 const BarWrapper = styled.div`
   width: 100%;
   height: 50%;

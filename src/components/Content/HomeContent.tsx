@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ContentSection,
   ContentElementWrapperLink,
   ContentElementImage,
   ContentElementTitle,
@@ -9,27 +10,29 @@ import {
 
 const Content = () => {
   return (
-    <ContentSectionWrapper>
-      <ContentElementWrapperLink to="/series">
-        <ContentElementImage
-          backgroundImage="/assets/images/placeholder.png"
-          backgroundColor="#34363b"
-        >
-          <ContentElementTitle>Series</ContentElementTitle>
-        </ContentElementImage>
-        <ContentElementImageText>Popular Series</ContentElementImageText>
-      </ContentElementWrapperLink>
+    <ContentSection>
+      <ContentSectionWrapper>
+        <ContentElementWrapperLink to="/series">
+          <ContentElementImage
+            backgroundImage="/assets/images/placeholder.png"
+            backgroundColor="#34363b"
+          >
+            <ContentElementTitle>Series</ContentElementTitle>
+          </ContentElementImage>
+          <ContentElementImageText>Popular Series</ContentElementImageText>
+        </ContentElementWrapperLink>
 
-      <ContentElementWrapperLink to="/movies">
-        <ContentElementImage
-          backgroundImage="/assets/images/placeholder.png"
-          backgroundColor="#34363b"
-        >
-          <ContentElementTitle>Movies</ContentElementTitle>
-        </ContentElementImage>
-        <ContentElementImageText>Popular Movies</ContentElementImageText>
-      </ContentElementWrapperLink>
-    </ContentSectionWrapper>
+        <ContentElementWrapperLink to="/movies">
+          <ContentElementImage
+            backgroundImage="/assets/images/placeholder.png"
+            backgroundColor="#34363b"
+          >
+            <ContentElementTitle>Movies</ContentElementTitle>
+          </ContentElementImage>
+          <ContentElementImageText>Popular Movies</ContentElementImageText>
+        </ContentElementWrapperLink>
+      </ContentSectionWrapper>
+    </ContentSection>
   );
 };
 

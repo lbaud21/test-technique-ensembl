@@ -1,20 +1,26 @@
 import React from "react";
 import {
+  ContentSection,
   ContentElementWrapper,
   ContentElementImage,
   ContentElementTitle,
   ContentSectionWrapper,
 } from "./styles";
 
+import useFetchProgram from "hooks/useFetchProgram";
+
 const Content = () => {
+  const { loading, error, programList } = useFetchProgram("series");
+
   return (
-    <></>
-    // <ContentSectionWrapper>
-    //   <ContentElementWrapper>
-    //     <ContentElementImage />
-    //     <ContentElementTitle></ContentElementTitle>
-    //   </ContentElementWrapper>
-    // </ContentSectionWrapper>
+    <ContentSection>
+      <ContentSectionWrapper>
+        <ContentElementWrapper>
+          {/* <ContentElementImage /> */}
+          <ContentElementTitle></ContentElementTitle>
+        </ContentElementWrapper>
+      </ContentSectionWrapper>
+    </ContentSection>
   );
 };
 

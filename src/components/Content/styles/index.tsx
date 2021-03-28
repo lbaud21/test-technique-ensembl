@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const ContentSection = styled.section`
+  min-height: 80vh;
+  padding: 5% 10%;
+`;
+
 export const ContentSectionWrapper = styled.div`
   width: 80%;
   display: flex;

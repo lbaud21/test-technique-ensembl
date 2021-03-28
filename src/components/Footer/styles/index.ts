@@ -1,5 +1,12 @@
 import styled from "styled-components"
 
+export const FooterSection = styled.footer`
+  height: 30vh;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgba(30, 30, 30, 255);
+`;
+
 export const HelpersWrapper = styled.div`
 display: flex;
 flex-flow: row nowrap;
