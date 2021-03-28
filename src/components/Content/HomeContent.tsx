@@ -12,7 +12,7 @@ const Content = () => {
     <ContentSectionWrapper>
       <ContentElementWrapperLink to="/series">
         <ContentElementImage
-          backgroundImage="assets/images/placeholder.png"
+          backgroundImage="/assets/images/placeholder.png"
           backgroundColor="#34363b"
         >
           <ContentElementTitle>Series</ContentElementTitle>
@@ -22,7 +22,7 @@ const Content = () => {
 
       <ContentElementWrapperLink to="/movies">
         <ContentElementImage
-          backgroundImage="https://raw.githubusercontent.com/ma-residence/react-coding-challenge/master/assets/placeholder.png"
+          backgroundImage="/assets/images/placeholder.png"
           backgroundColor="#34363b"
         >
           <ContentElementTitle>Movies</ContentElementTitle>
