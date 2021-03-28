@@ -9,13 +9,13 @@ interface Program {
 
 interface FetchResult {
   total: number;
-  entries: Array<Program>;
+  entries: Program[];
 }
 
-const useFetchProgram = async ({ programType }: { programType: string }) => {
+const useFetchProgram = (programType: string) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
-  const [programList, setProgramList] = useState<Array<Program>>([]);
+  const [programList, setProgramList] = useState<Program[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
