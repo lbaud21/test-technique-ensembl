@@ -19,7 +19,10 @@ const Icons = () => {
       <StoreIconsWrapper>
         <StoreIcon backgroundImage="/assets/images/store/app-store.svg" />
         <StoreIcon backgroundImage="/assets/images/store/play-store.svg" />
-        <StoreIcon backgroundImage="/assets/images/store/windows-store.svg" />
+        <StoreIcon
+          backgroundImage="/assets/images/store/windows-store.svg"
+          width="7.4em"
+        />
       </StoreIconsWrapper>
     </IconsWrapper>
   );
