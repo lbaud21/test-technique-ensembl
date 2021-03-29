@@ -4,18 +4,20 @@ import {
   ContentElementWrapperLink,
   ContentElementImage,
   ContentElementTitle,
-  ContentSectionWrapper,
+  HomeContentSectionWrapper,
   ContentElementImageText,
 } from "./styles";
 
 const Content = () => {
   return (
     <ContentSection>
-      <ContentSectionWrapper>
+      <HomeContentSectionWrapper>
         <ContentElementWrapperLink to="/series">
           <ContentElementImage
             backgroundImage="/assets/images/placeholder.png"
             backgroundColor="#34363b"
+            backgroundPosition="center"
+            backgroundSize="200%"
           >
             <ContentElementTitle>Series</ContentElementTitle>
           </ContentElementImage>
@@ -26,12 +28,14 @@ const Content = () => {
           <ContentElementImage
             backgroundImage="/assets/images/placeholder.png"
             backgroundColor="#34363b"
+            backgroundPosition="center"
+            backgroundSize="200%"
           >
             <ContentElementTitle>Movies</ContentElementTitle>
           </ContentElementImage>
           <ContentElementImageText>Popular Movies</ContentElementImageText>
         </ContentElementWrapperLink>
-      </ContentSectionWrapper>
+      </HomeContentSectionWrapper>
     </ContentSection>
   );
 };
