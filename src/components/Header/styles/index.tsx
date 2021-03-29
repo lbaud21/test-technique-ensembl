@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderWrapper = styled.header`
   height: 20vh;
@@ -17,12 +18,13 @@ export const NavbarWrapper = styled(BarWrapper)`
   background-color: #235bd3;
 `;
 
-export const NavbarTitle = styled.h1`
+export const NavbarTitle = styled(Link)`
   font-size: 2.5em;
   color: white;
   margin: 0%;
   margin-left: 10%;
   padding-bottom: 0.1em;
+  text-decoration: none;
 
   @media screen and (max-width: 650px) {
     font-size: 1.6em;

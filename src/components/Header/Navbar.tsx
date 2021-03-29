@@ -9,7 +9,7 @@ import {
 const Navbar = () => {
   return (
     <NavbarWrapper>
-      <NavbarTitle>Demo Streaming</NavbarTitle>
+      <NavbarTitle to="/">Demo Streaming</NavbarTitle>
       <NavbarContent>
         <NavbarElement>
           <NavbarElementContent>Login</NavbarElementContent>
