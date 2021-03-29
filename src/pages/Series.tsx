@@ -1,11 +1,15 @@
-import React from 'react'
+import Header from "components/Header/Header";
+import SeriesContainer from "containers/Content/SeriesContainer";
+import Footer from "components/Footer/Footer";
 
 const Series = () => {
-    return (
-        <div>
-            series
-        </div>
-    )
-}
+  return (
+    <>
+      <Header title="Popular Series" />
+      <SeriesContainer />
+      <Footer />
+    </>
+  );
+};
 
-export default Series
+export default Series;
