@@ -7,6 +7,8 @@ const useFetchProgram = (programType: string) => {
   const [error, setError] = useState<boolean>(false);
   const [programList, setProgramList] = useState<Program[]>([]);
 
+  let cancelRequest = false;
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -14,6 +16,10 @@ const useFetchProgram = (programType: string) => {
         const data: FetchResult = await axios.get(
           "https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json"
         );
+
+        if (cancelRequest) {
+          return;
+        }
 
         setProgramList(
           data.data.entries
@@ -26,6 +32,10 @@ const useFetchProgram = (programType: string) => {
             .slice(0, 21)
         );
       } catch (error) {
+        if (cancelRequest) {
+          return;
+        }
+
         setLoading(false);
         setError(true);
       }
@@ -33,6 +43,8 @@ const useFetchProgram = (programType: string) => {
     };
 
     fetchData();
+
+    return () => (cancelRequest = true);
   }, [programType]);
 
   return { loading, error, programList };
