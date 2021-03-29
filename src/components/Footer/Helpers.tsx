@@ -13,10 +13,12 @@ const helpersList = [
 const Footer = () => {
   return (
     <HelpersWrapper>
-      {helpersList.map((helper) => (
+      {helpersList.map((helper, index) => (
         <React.Fragment key={helper}>
           <HelperItem>{helper}</HelperItem>
-          <HelperSeparator>|</HelperSeparator>
+          {index !== helpersList.length - 1 ? (
+            <HelperSeparator>|</HelperSeparator>
+          ) : null}
         </React.Fragment>
       ))}
     </HelpersWrapper>
