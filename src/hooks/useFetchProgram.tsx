@@ -43,8 +43,10 @@ const useFetchProgram = (programType: string) => {
     };
 
     fetchData();
-
-    return () => (cancelRequest = true);
+    return () => {
+      // eslint-disable-next-line
+      cancelRequest = true;
+    };
   }, [programType]);
 
   return { loading, error, programList };
