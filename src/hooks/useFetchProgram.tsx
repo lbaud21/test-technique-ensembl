@@ -1,16 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
-interface Program {
-  title: string;
-  programType: string;
-  images: any;
-}
-
-interface FetchResult {
-  total: number;
-  entries: Program[];
-}
+import { Program, FetchResult } from "./types";
 
 const useFetchProgram = (programType: string) => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -26,7 +16,14 @@ const useFetchProgram = (programType: string) => {
         );
 
         setProgramList(
-          data.entries.filter((program) => program.programType === programType)
+          data.data.entries
+            .filter(
+              (program) =>
+                program.programType === programType &&
+                program.releaseYear >= 2010
+            )
+            .sort((a, b) => (a.title > b.title ? 1 : -1))
+            .slice(0, 21)
         );
       } catch (error) {
         setLoading(false);
