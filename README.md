@@ -35,6 +35,7 @@
 - Add a button to fetch more program results
 - Add more animations
 - Implement a Redux store (it is the best option to handle and organize app state if the app grows)
+- Caching results to avoid overfetching
 
 ### Tests
 
