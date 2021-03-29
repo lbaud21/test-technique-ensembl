@@ -1,6 +1,6 @@
-import Header from "containers/Header/Header";
-import Content from "containers/Content/HomeContent";
-import Footer from "containers/Footer/Footer";
+import Header from "components/Header/Header";
+import Content from "components/Content/HomeContent";
+import Footer from "components/Footer/Footer";
 
 const Home = () => {
   return (
